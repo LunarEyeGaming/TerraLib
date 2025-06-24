@@ -1,0 +1,38 @@
+{
+  "objectName" : "terra_placeassist",
+  "colonyTags" : [],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "other",
+  "price" : 0,
+  "description" : "Exists for scripts to place blocks in midair (since the game doesn't support this by default for whatever reason). Deletes itself immediately after it gets placed.",
+  "shortdescription" : "Nothing",
+  "race" : "generic",
+
+  "inventoryIcon" : "pixel.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "pixel.png" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ],
+      "direction" : "left",
+      "collision" : "platform"
+    },
+    {
+      "imageLayers" : [ { "image" : "pixel.png" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ],
+      "direction" : "right",
+      "collision" : "platform"
+    }
+  ],
+
+  "outputNodes" : [],
+
+  "scripts" : ["/objects/terra_placeassist/script.lua"],
+  "scriptDelta" : 1
+}

@@ -1,0 +1,28 @@
+{
+  "projectileName" : "terra_floatingitem",
+  "physics" : "mechbattery",
+  "bounces" : -1,
+  "image" : "/assetmissing.png:0",
+  "fullbright" : true,
+  "lightColor" : [0, 0, 0],
+  "animationCycle" : 0.35,
+  "frameNumber" : 1,
+  "power" : 0,
+  "speed" : 0,
+  "actionOnReap" : [],
+  "onlyHitTerrain" : true,
+  
+  "clientEntityMode": "ClientSlaveOnly",
+
+  "orientationLocked" : true,
+
+  "timeToLive" : 300,
+
+  "scripts" : ["item.lua"],
+  "scriptDelta" : 10,
+
+  "pickupRange" : 2,
+  "snapRange" : 6,
+  "snapSpeed" : 150,
+  "snapForce" : 250
+}

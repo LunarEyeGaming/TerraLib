@@ -1,0 +1,5 @@
+{
+    "sounds": {
+        "use": ["/sfx/npc/boss_summon.ogg"]
+    }
+}

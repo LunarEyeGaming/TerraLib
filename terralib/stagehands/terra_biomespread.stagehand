@@ -1,0 +1,10 @@
+{
+  "type" : "terra_biomemanager",
+
+  "scripts" : [
+  	"/stagehands/terra_biomespread.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "biomes": {}
+} 

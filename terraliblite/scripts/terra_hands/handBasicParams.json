@@ -1,0 +1,164 @@
+{
+    "metaBoundBox" : [-32, -32, 32, 32],
+    
+    "movementSettings" : {
+      "collisionEnabled": false,
+      "collisionPoly" : [ [0.0,0.0] ],
+
+      "mass" : 2.0,
+      "walkSpeed" : 35,
+      "runSpeed" : 35,
+
+      "bounceFactor" : 0,
+      "groundFriction" : 10,
+      "gravityEnabled" : false,
+
+      "airFriction" : 0,
+      "liquidFriction": 0,
+      "liquidBuoyancy": 0.0
+    },
+    
+    "initialScriptDelta": 1,
+    "clientEntityMode": "clientMasterAllowed",
+    "renderLayer": "Player+1",
+    "level": 1,
+    
+    "bodyMaterialKind" : "organic",
+    
+    "stunDamageSuppression" : 0.2,
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/scripts/terra_hands/hand_primary.lua"
+      ],
+      "primaryScriptDelta" : 1,
+
+      "stats" : {
+        "grit" : {
+          "baseValue" : 1
+        },
+        "knockbackStunTime" : {
+          "baseValue" : 0.0
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 0
+        },
+        "invulnerable": {
+          "baseValue": 1.0
+        },
+        "statusImmunity": {
+          "baseValue": 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 100
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.5
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+    "animationCustom":{
+      "animatedParts" : {
+        "stateTypes" : {
+          "body" : {
+            "priority" : 4,
+            "states" : {
+              "idle" : {}
+            }
+          },
+          "droneState": {
+            "default" : "none",
+            "states": {
+              "none": {},
+              "active": {
+                "properties": {
+                  "persistentSound": ""
+                }
+              }
+            }
+          }
+        },
+
+        "parts" : {
+          "body" : {
+            "partStates" : {
+              "droneState" : {
+                "deploy" : {
+                  "properties" : {
+                    "image" : "/assetmissing.png"
+                  }
+                },
+                "active" : {
+                  "properties" : {
+                    "image" : "/assetmissing.png"
+                  }
+                }
+              }
+            }
+          },
+          "bodyFullbright" : {
+            "partStates" : {
+              "droneState" : {
+                "deploy" : {
+                  "properties" : {
+                    "image" : "/assetmissing.png"
+                  }
+                },
+                "active" : {
+                  "properties" : {
+                    "image" : "/assetmissing.png"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+
+      "transformationGroups" : {
+        "body" : { "interpolated" : true },
+        "arm_weapon" : { "interpolated" : false },
+        "flip": {"interpolated": false},
+        "rotation": {"interpolated": false}
+      },
+      "effects" : {
+      },
+      "particleEmitters" : null,
+      "lights" : {
+      },
+      "sounds" : {
+        "arm_use1": [],
+        "arm_use2": [],
+        "arm_use3": [],
+        "arm_use4": [],
+        "arm_use5": [],
+        "arm_use6": []
+      }
+    }
+} 

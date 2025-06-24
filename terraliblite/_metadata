@@ -1,0 +1,13 @@
+{
+  "author" : "Bott",
+  "description" : "Adds scripts for Terrarialike enemies.\nThis will do nothing by itself.\nVanilla-compatible version with reduced features.",
+  "friendlyName" : "TerraLib Lite",
+  "link" : "",
+  "name" : "terraliblite",
+  "steamContentId" : "",
+  "tags" : "Miscellaneous",
+  "version" : "1.12",
+  "scripts" : {
+    "postLoad" : ["/scripts/assets/terra_postload.lua"]
+  }
+}

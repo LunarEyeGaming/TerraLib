@@ -1,0 +1,58 @@
+[
+    {
+        "op":"add",
+        "path":"/spikyball",
+        "value":{
+            "mass" : 1.0,
+            "gravityMultiplier" : 1,
+            "bounceFactor" : 0.995,
+            "stopOnFirstBounce" : false,
+            "maxMovementPerStep" : 1.0,
+
+            "collisionPoly" : [ [0.5, 0.5], [-0.5, 0.5], [-0.5, -0.5], [0.5, -0.5] ],
+
+            "airFriction" : 0,
+            "liquidFriction" : 0.0,
+            "groundFriction" : 0.0,
+            "liquidBuoyancy" : 0.0,
+            "maximumCorrection" : 0.75
+        }
+    },
+    {
+        "op":"add",
+        "path":"/spikyballnogravity",
+        "value":{
+            "mass" : 1.0,
+            "gravityMultiplier" : 0,
+            "bounceFactor" : 0.995,
+            "stopOnFirstBounce" : false,
+            "maxMovementPerStep" : 1.0,
+
+            "collisionPoly" : [ [0.5, 0.5], [-0.5, 0.5], [-0.5, -0.5], [0.5, -0.5] ],
+
+            "airFriction" : 0,
+            "liquidFriction" : 0.0,
+            "groundFriction" : 0.0,
+            "liquidBuoyancy" : 0.0,
+            "maximumCorrection" : 0.75
+        }
+    },
+    {
+        "op":"add",
+        "path":"/nocollidelaser",
+        "value":{
+            "gravityMultiplier" : 0.0,
+            "bounceFactor" : 1.0,
+            "stopOnFirstBounce" : true,
+            "maxMovementPerStep" : 0.4,
+            "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+            "ignorePlatformCollision" : true,
+            "groundFriction" : 0,
+            "airFriction" : 0,
+            "liquidFriction" : 0.0,
+            "speedLimit" : null,
+            "maximumCorrection" : 0.75,
+            "collisionEnabled": false
+        }
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "author" : "Bott",
+  "description" : "Additional non-vanilla-compatible content from TerraLib. TerraLib Lite now comes with TerraLib.",
+  "friendlyName" : "TerraLib",
+  "link" : "steam://url/CommunityFilePage/2230165463",
+  "name" : "terralib",
+  "steamContentId" : "2230165463",
+  "tags" : "Miscellaneous",
+  "version" : "1.12",
+  "requires": ["terraliblite"]
+}
