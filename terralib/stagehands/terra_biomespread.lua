@@ -38,6 +38,12 @@ function update(dt)
         return
     end
     stagehand.setPosition(world.entityPosition(spawner))
+
+    -- Do nothing if there are no biomes defined
+    if #biomes == 0 then
+        return
+    end
+
     y = y + 1
     if y > 200 then
         y = -200
